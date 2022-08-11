@@ -11,6 +11,59 @@
   <script src="script.js" defer></script>
 </head>
 <body>
-  
+  <div class="layout">
+    <div class="side">
+      <img src="img/cover.jpg" alt="background image" class="bgImage">
+    </div>
+    <div class="main">
+      <div class="hero">
+        <div class="text">
+          Sign up to get into your MetaVerse.<br>
+          The whole virtual life is waiting for you.
+        </div>
+      </div>
+      <div class="form">
+        <div class="req">
+          <div class="text">
+            * marked fields are required!
+          </div>
+        </div>
+        <form id="input-form">
+          <div class="frow">
+            <label for="fname">FIRST NAME<span aria-label="required">*</span></label>
+            <input type="text" name="fname" id="fname">
+          </div>
+          <div class="frow">
+            <label for="lname">LAST NAME</label>
+            <input type="text" name="fname" id="fname">
+          </div>
+          <div class="frow">
+            <label for="email">EMAIL<span aria-label="required">*</span></label>
+            <input type="email" name="email" id="email">
+          </div>
+          <div class="frow">
+            <label for="phone">PHONE NUMBER</label>
+            <input type="tel" name="phone" id="phone">
+          </div>
+          <div class="frow">
+            <label for="password">PASSWORD<span aria-label="required">*</span></label>
+            <input type="password" name="password" id="password">
+          </div>
+          <div class="frow">
+            <label for="cpassword">CONFIRM PASSWORD<span aria-label="required">*</span></label>
+            <input type="cpassword" name="cpassword" id="cpassword">
+          </div>
+        </form>
+      </div>
+      <div class="bottom">
+        <button form="input-form">Enter World!</button>
+        <div class="login">
+          <div class="text">
+            Already have entered the world? <a href="index.html">Log in</a>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
 </body>
 </html>
