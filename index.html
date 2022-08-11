@@ -34,7 +34,7 @@
         <form id="input-form">
           <div class="frow">
             <label for="fname">FIRST NAME<span aria-label="required">*</span></label>
-            <input type="text" name="fname" id="fname" placeholder="">
+            <input type="text" name="fname" id="fname" placeholder="" required>
           </div>
           <div class="frow">
             <label for="lname">LAST NAME</label>
@@ -42,7 +42,7 @@
           </div>
           <div class="frow">
             <label for="email">EMAIL<span aria-label="required">*</span></label>
-            <input type="email" name="email" id="email" placeholder="">
+            <input type="email" name="email" id="email" placeholder="" required>
           </div>
           <div class="frow">
             <label for="phone">PHONE NUMBER</label>
@@ -51,11 +51,13 @@
           </div>
           <div class="frow">
             <label for="password">PASSWORD<span aria-label="required">*</span></label>
-            <input type="password" name="password" id="password" placeholder="">
+            <input type="password" name="password" id="password" placeholder="" required
+            pattern="((?=.*[A-Z])(?=.*[!@#$&*])(?=.*[0-9])(?=.*[a-z]).{8}).*"
+            title="password must be atleast 8 digits including a uppercase, lowercase, number and a special character">
           </div>
           <div class="frow">
             <label for="cpassword">CONFIRM PASSWORD<span aria-label="required">*</span></label>
-            <input type="password" name="cpassword" id="cpassword" placeholder="">
+            <input type="password" name="cpassword" id="cpassword" placeholder="" required>
           </div>
         </form>
       </div>
