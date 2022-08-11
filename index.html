@@ -52,8 +52,14 @@
           <div class="frow">
             <label for="password">PASSWORD<span aria-label="required">*</span></label>
             <input type="password" name="password" id="password" placeholder="" required
-            pattern="((?=.*[A-Z])(?=.*[!@#$&*])(?=.*[0-9])(?=.*[a-z]).{8}).*"
+            pattern="((?=.*[A-Z])(?=.*[0-9])(?=.*[a-z]).{8}).*"
             title="password must be atleast 8 digits including a uppercase, lowercase, number and a special character">
+            <ul class="password-rules">
+              <li id="uppercase">Uppercase</li>
+              <li id="lowercase">Lowercase</li>
+              <li id="number">Number</li>
+              <li id="digit">Atleast 8 digit</li>
+            </ul>
           </div>
           <div class="frow">
             <label for="cpassword">CONFIRM PASSWORD<span aria-label="required">*</span></label>

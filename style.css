@@ -121,6 +121,17 @@ a{
 input:invalid:not(:placeholder-shown){
   border: 2px solid var(--pinkd)
 }
-#password:focus + span::after{
-  content: 'ux';
+.password-rules{
+  display: none;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 2px solid var(--pinkd);
+  border-radius: 5px;
+}
+#password:valid + .password-rules{
+  border-color: var(--bluel);
+}
+.password-rules li{
+  margin-top: 10px;
+  margin-left: 20px;
+  color: var(--pinkd);
 }
