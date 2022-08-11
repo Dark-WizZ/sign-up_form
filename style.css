@@ -17,7 +17,7 @@
 }
 
 .side{
-  background-image: url(img/cover.jpg);
+  background-image: url(img/cover-compressed.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   width: 30%;
@@ -117,6 +117,9 @@ input:focus{
 a{
   color: var(--cyand);
   text-decoration: none;
+}
+a:hover{
+  color: var(--pinkd);
 }
 input:invalid:not(:placeholder-shown){
   border: 2px solid var(--pinkd)
