@@ -91,7 +91,33 @@ button{
   border-radius: 5px;
   padding: 10px 16px;
 }
+button:hover{
+  cursor: pointer;
+  background-color: var(--pinkd);
+}
+button:active{
+  background-color: var(--blued);
+  color: var(--pinkd);
+  border: 2px solid var(--pinkl);
+}
 .req .text{
   margin-bottom: 30px;
   font-family: 'robotoblack_italic';
+}
+
+input:not(:placeholder-shown){
+  border: 2px solid var(--cyand)
+}
+input:focus{
+  outline-style: none;
+  outline-color: var(--bluel);
+  outline-style: solid ;
+  border: 2px solid #1b39e2;
+}
+a{
+  color: var(--cyand);
+  text-decoration: none;
+}
+input:invalid{
+  border: 2px solid var(--pinkd)
 }

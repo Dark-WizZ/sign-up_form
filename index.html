@@ -34,27 +34,28 @@
         <form id="input-form">
           <div class="frow">
             <label for="fname">FIRST NAME<span aria-label="required">*</span></label>
-            <input type="text" name="fname" id="fname">
+            <input type="text" name="fname" id="fname" placeholder="">
           </div>
           <div class="frow">
             <label for="lname">LAST NAME</label>
-            <input type="text" name="fname" id="fname">
+            <input type="text" name="fname" id="fname" placeholder="">
           </div>
           <div class="frow">
             <label for="email">EMAIL<span aria-label="required">*</span></label>
-            <input type="email" name="email" id="email">
+            <input type="email" name="email" id="email" placeholder="">
           </div>
           <div class="frow">
             <label for="phone">PHONE NUMBER</label>
-            <input type="tel" name="phone" id="phone">
+            <input type="tel" name="phone" id="phone" pattern="[0-9]{10}" 
+            placeholder="" title="Please enter ten digit number without country code">
           </div>
           <div class="frow">
             <label for="password">PASSWORD<span aria-label="required">*</span></label>
-            <input type="password" name="password" id="password">
+            <input type="password" name="password" id="password" placeholder="">
           </div>
           <div class="frow">
             <label for="cpassword">CONFIRM PASSWORD<span aria-label="required">*</span></label>
-            <input type="cpassword" name="cpassword" id="cpassword">
+            <input type="password" name="cpassword" id="cpassword" placeholder="">
           </div>
         </form>
       </div>
