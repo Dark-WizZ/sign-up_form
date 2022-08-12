@@ -115,6 +115,10 @@ input:focus{
   outline-color: var(--bluel);
   outline-style: solid ;
   border: 2px solid #1b39e2;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+input:hover{
+  background-color: rgba(0, 0, 0, 0.2);
 }
 a{
   color: var(--cyand);
